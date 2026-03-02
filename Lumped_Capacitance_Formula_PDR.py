@@ -14,7 +14,7 @@ seconds = np.linspace(0,700,700)
 tau = (density*specific_heat*volume) / (h*area)
 func = t_infinity + (t_naught-t_infinity)*np.exp((-seconds) /tau )
 
-plt.title("Heating of PCB (Lumped Capacitance Model)", fontsize=10, weight='bold')
+plt.title("Heating of PCB (Lumped Capacitance Model)")
 plt.xlabel("Time (s)", fontsize=14)
 plt.ylabel("Temperature (K)", fontsize=14)
 plt.grid(True, linestyle="--", alpha=0.4)
